@@ -1,0 +1,39 @@
+Ouvrez PowerShell en tant qu'administrateur.
+Exécutez la commande suivante pour modifier la stratégie d'exécution temporairement :
+
+
+----------------
+Set-ExecutionPolicy Bypass -Scope Process
+Vous avez exécuté le script en utilisant le chemin complet vers le fichier :
+makefile
+
+------------------------
+C:\Users\Joari\Downloads\OrganizeFolder.ps1
+Après avoir modifié temporairement la stratégie d'exécution, vous avez réussi à exécuter le script sans rencontrer d'erreurs.
+
+Il est important de noter que cette modification temporaire de la stratégie d'exécution ne s'applique qu'à la session en cours et permet d'exécuter des scripts non signés.
+
+Si vous souhaitez modifier la stratégie d'exécution de manière permanente, vous pouvez suivre l'option 2 :
+
+Ouvrez PowerShell en tant qu'administrateur.
+
+Exécutez la commande suivante pour afficher la stratégie d'exécution actuelle :
+
+
+Get-ExecutionPolicy
+Si la stratégie actuelle est "Restricted" ou "AllSigned", vous pouvez la modifier en utilisant l'une des commandes suivantes :
+
+
+Set-ExecutionPolicy RemoteSigned
+
+
+Set-ExecutionPolicy Unrestricted
+Choisissez la commande qui correspond à vos besoins en matière de sécurité.
+
+Lorsque vous êtes invité à confirmer la modification de la stratégie, répondez par "O" (Oui) et appuyez sur Entrée.
+
+Vous pouvez maintenant exécuter le script en utilisant le chemin complet vers le fichier, sans avoir à modifier temporairement la stratégie d'exécution.
+
+N'oubliez pas que modifier la stratégie d'exécution peut présenter des risques de sécurité. Il est recommandé de restaurer la stratégie d'exécution précédente une fois que vous avez terminé l'exécution du script, en utilisant la commande Set-ExecutionPolicy.
+
+J'espère que cela résume bien les étapes que vous avez suivies pour faire fonctionner le script PowerShell !
