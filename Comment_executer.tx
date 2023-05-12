@@ -8,7 +8,7 @@ Vous avez exécuté le script en utilisant le chemin complet vers le fichier :
 makefile
 
 ------------------------
-C:\Users\Joari\Downloads\OrganizeFolder.ps1
+chemin fichier .ps1
 Après avoir modifié temporairement la stratégie d'exécution, vous avez réussi à exécuter le script sans rencontrer d'erreurs.
 
 Il est important de noter que cette modification temporaire de la stratégie d'exécution ne s'applique qu'à la session en cours et permet d'exécuter des scripts non signés.
