@@ -1,0 +1,33 @@
+Pour exécuter un fichier .ps1 (PowerShell) sur Windows, vous pouvez suivre ces étapes :
+
+1. Assurez-vous que vous disposez d'une version de PowerShell installée sur votre système. Vous pouvez vérifier cela en ouvrant l'invite de commandes et en tapant "powershell". Si PowerShell est installé, il s'ouvrira.
+
+2. Localisez le fichier .ps1 que vous souhaitez exécuter. Assurez-vous d'avoir le chemin d'accès complet du fichier.
+
+3. Ouvrez une nouvelle instance de PowerShell en cliquant avec le bouton droit sur le menu Démarrer, en sélectionnant "Windows PowerShell" ou "Windows PowerShell (Admin)".
+
+4. Dans la fenêtre PowerShell, utilisez la commande `cd` (Change Directory) pour naviguer vers le répertoire où se trouve votre fichier .ps1. Par exemple, si votre fichier se trouve dans le dossier "C:\Scripts", vous pouvez taper la commande suivante et appuyer sur Entrée :
+
+   ```
+   cd C:\Scripts
+   ```
+
+5. Une fois que vous êtes dans le bon répertoire, vous pouvez exécuter le fichier .ps1 en tapant son nom suivi de l'extension. Par exemple, si votre fichier s'appelle "script.ps1", vous pouvez taper la commande suivante et appuyer sur Entrée :
+
+   ```
+   .\script.ps1
+   ```
+
+   Notez que le point devant le chemin d'accès du fichier est important pour exécuter le fichier dans le contexte actuel.
+
+6. PowerShell exécutera alors le script et vous verrez les résultats s'afficher dans la fenêtre.
+
+Veuillez noter que selon votre configuration de sécurité, vous pourriez rencontrer des problèmes pour exécuter des scripts PowerShell. Dans ce cas, vous devrez peut-être modifier l'exécution de scripts à l'aide de la commande `Set-ExecutionPolicy`. Par exemple, vous pouvez ouvrir PowerShell en tant qu'administrateur et exécuter la commande suivante :
+
+```
+Set-ExecutionPolicy RemoteSigned
+```
+
+Cela permettra l'exécution de scripts locaux signés et des scripts distants non signés.
+
+Assurez-vous de comprendre les risques potentiels liés à l'exécution de scripts téléchargés à partir de sources non fiables et de prendre les précautions appropriées.
